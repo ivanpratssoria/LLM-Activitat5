@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informació i curiositats sobre l'Aloy i la raça brac de Weimar.">
+    <meta name="author" content="Alumne">
+    <meta name="keywords" content="Aloy, gossa, brac de Weimar, curiositats">
+
+    <title>Sobre l'Aloy - El món de l'Aloy</title>
+
+    <link rel="stylesheet" href="css/estils.css">
+
+    <script src="components/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>El món de l'Aloy 🐾</h1>
+        <p>Coneix millor l'Aloy</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="aloy.html">Sobre l'Aloy</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>La raça brac de Weimar</h2>
+
+            <p>
+                L'Aloy és una gossa de raça brac de Weimar,
+                també coneguda com a Weimaraner.
+                Aquesta raça és originària d'Alemanya.
+            </p>
+
+            <p>
+                Els bracs de Weimar destaquen pel seu
+                pelatge gris platejat, la seva elegància
+                i el seu caràcter actiu i intel·ligent.
+            </p>
+
+            <img src="img/aloy casa.jpeg"
+                 alt="L'Aloy descansant a casa"
+                 width="400">
+        </section>
+
+        <section>
+            <h2>Curiositats sobre l'Aloy</h2>
+
+            <p>
+                Passa el ratolí per sobre del requadre
+                següent per descobrir una curiositat.
+            </p>
+
+            <div id="zonaInteractiva"
+                 onmouseover="mostrarCuriositat()"
+                 onmouseout="ocultarCuriositat()">
+
+                <h3>Descobreix una curiositat!</h3>
+
+                <p>
+                    Passa el ratolí per aquí.
+                </p>
+
+                <p id="textOcult">
+                    Els bracs de Weimar són gossos
+                    molt enèrgics, intel·ligents
+                    i afectuosos. Necessiten exercici
+                    i els agrada estar acompanyats.
+                </p>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>L'Aloy quan era petita</h2>
+
+            <p>
+                Aquí podem veure l'Aloy quan era
+                una cadella. Amb el temps ha crescut,
+                però continua sent una gossa molt especial.
+            </p>
+
+            <img src="img/aloy cachorra.jpeg"
+                 alt="L'Aloy quan era cadella"
+                 width="400">
+        </section>
+
+        <section>
+            <h2>Formulari de contrasenya</h2>
+
+            <p>
+                Introdueix una contrasenya dues vegades.
+                Ha de tenir com a mínim 8 caràcters
+                i les dues contrasenyes han de coincidir.
+            </p>
+
+            <form onsubmit="return validarContrasenya()">
+
+                <label for="password1">
+                    Nova contrasenya:
+                </label>
+
+                <input type="password"
+                       id="password1"
+                       name="password1"
+                       required>
+
+                <label for="password2">
+                    Repeteix la contrasenya:
+                </label>
+
+                <input type="password"
+                       id="password2"
+                       name="password2"
+                       required>
+
+                <button type="submit">
+                    Comprovar contrasenya
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Activitat 5 - JavaScript</p>
+        <p>El món de l'Aloy 🐾</p>
+    </footer>
+
+</body>
+
+</html>
+

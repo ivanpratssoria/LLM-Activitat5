@@ -1,0 +1,234 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff2f6;
+    color: #4a3540;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d989a9;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #a94e78;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe1ed;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(169, 78, 120, 0.12);
+}
+
+h2 {
+    color: #a94e78;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* GALERIA */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #fff2f6;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.galeria img:hover {
+    opacity: 0.8;
+    outline: 3px solid #d989a9;
+}
+
+.titolFotos {
+    text-align: center;
+    font-size: 32px;
+    color: #a94e78;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+#imatgeGran {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+/* CURIOSITATS */
+
+#zonaInteractiva {
+    padding: 25px;
+    background-color: #ffe1ed;
+    color: #4a3540;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#textOcult {
+    display: none;
+}
+
+/* RELLOTGE */
+
+#rellotge {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* FORMULARI */
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #d989a9;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #a94e78;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #87375d;
+}
+
+/* PEU DE PÀGINA */
+
+footer {
+    background-color: #a94e78;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MÒBILS */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria img {
+        height: 180px;
+    }
+
+    #imatgeGran {
+        width: 100%;
+    }
+
+    .titolFotos {
+        font-size: 26px;
+    }
+}
+

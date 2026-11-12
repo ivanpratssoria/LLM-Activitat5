@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Coneix l'Aloy, una gossa de raça brac de Weimar, i descobreix les seues aventures.">
+
+    <meta name="author" content="Alumne">
+
+    <meta name="keywords"
+          content="Aloy, gossa, brac de Weimar, aventures, mascotes">
+
+    <title>Inici - El món de l'Aloy</title>
+
+    <link rel="stylesheet" href="css/estils.css">
+
+    <script>
+        let segons = 0;
+
+        function actualitzarRellotge() {
+            segons++;
+
+            let minuts = Math.floor(segons / 60);
+            let segonsRestants = segons % 60;
+
+            document.getElementById("rellotge").textContent =
+                "Portes " + minuts + " minuts i " +
+                segonsRestants + " segons al meu món! 🐾";
+        }
+
+        window.onload = function() {
+            setInterval(actualitzarRellotge, 1000);
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>🐾 El món de l'Aloy 🐾</h1>
+
+        <p>
+            💗 Hola! Soc l'Aloy.
+            Benvinguts al meu petit món! 💗
+        </p>
+
+        <div id="rellotge">
+            Portes 0 minuts i 0 segons al meu món! 🐾
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="galeria.html">Les meues fotos</a>
+        <a href="aloy.html">Sobre mi</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>🐾 Qui soc jo?</h2>
+
+            <p>
+                Hola! Soc l'Aloy, una gossa de raça
+                brac de Weimar. Tinc un pelatge gris
+                molt característic i uns ulls preciosos!
+            </p>
+
+            <p>
+                Soc una gossa molt juganera i entremaliada.
+                M'encanta córrer, jugar i passar temps
+                amb la meua família.
+            </p>
+
+            <img src="img/aloy nieve.jpeg"
+                 alt="Jo, l'Aloy, jugant a la neu"
+                 width="500">
+        </section>
+
+        <section>
+            <h2>🐾 Descobreix el meu món!</h2>
+
+            <p>
+                Vols conèixer-me una mica millor?
+                Aquí podràs veure les meues fotografies,
+                descobrir com era quan era petita i
+                aprendre curiositats sobre la meua raça.
+            </p>
+
+            <p>
+                He viscut moltes aventures a la platja,
+                a la neu i a casa. T'animes a descobrir-les?
+            </p>
+
+            <p>
+                Vinga, acompanya'm! 🐶💕
+            </p>
+
+            <img src="img/aloy cachorra 2.jpeg"
+                 alt="Jo, l'Aloy, quan era cadelleta"
+                 width="400">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Activitat 5 - JavaScript</p>
+        <p>🐾 El món de l'Aloy 🐾</p>
+    </footer>
+
+</body>
+
+</html>
+

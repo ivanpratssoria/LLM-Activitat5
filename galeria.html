@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobreix les fotografies i aventures de l'Aloy.">
+    <meta name="author" content="Alumne">
+    <meta name="keywords" content="Aloy, galeria, fotografies, brac de Weimar">
+
+    <title>Les meues fotos - El món de l'Aloy</title>
+
+    <link rel="stylesheet" href="css/estils.css">
+
+    <script>
+        function mostrarImatge(foto, descripcio) {
+            let imatgeGran = document.getElementById("imatgeGran");
+
+            imatgeGran.src = foto;
+            imatgeGran.alt = descripcio;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐾 El món de l'Aloy 🐾</h1>
+        <p>Preparats per veure les meues fotos? 📸</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="galeria.html">Les meues fotos</a>
+        <a href="aloy.html">Sobre mi</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>🐾 Les meues fotografies</h2>
+
+            <p>
+                M'encanta fer-me fotos! Aquí em pots veure
+                en diferents moments de la meua vida:
+                a la platja, a la neu, a casa i quan
+                era una cadelleta.
+            </p>
+
+            <p>
+                Fes clic sobre una fotografia per veure'm
+                més gran! 🐶
+            </p>
+
+            <div class="galeria">
+
+                <img src="img/aloy gorra.jpeg"
+                     alt="Jo amb una gorra"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+                <img src="img/aloy playa 2.jpeg"
+                     alt="Jo descansant a la platja"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+                <img src="img/aloy nieve.jpeg"
+                     alt="Jo jugant a la neu"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+                <img src="img/aloy casa.jpeg"
+                     alt="Jo a casa amb una joguina"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+                <img src="img/aloy cachorra 2.jpeg"
+                     alt="Jo quan era cadelleta"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+                <img src="img/aloy cachorra.jpeg"
+                     alt="Jo de petita"
+                     onclick="mostrarImatge(this.src, this.alt)">
+
+            </div>
+
+            <h2 class="titolFotos">
+                🐾 Mira que guapa surto! 🐾
+            </h2>
+
+            <img id="imatgeGran"
+                 src="img/aloy nieve.jpeg"
+                 alt="Jo, l'Aloy, a la neu">
+
+        </section>
+
+        <section>
+            <h2>🐾 Les meues aventures</h2>
+
+            <p>
+                Una de les coses que més m'agrada
+                és sortir a passejar, córrer i descobrir
+                llocs nous.
+            </p>
+
+            <p>
+                La platja és un dels llocs on m'ho passo
+                millor. Mireu que bé que surto a la foto!
+            </p>
+
+            <img src="img/ALOY PLAYA.jpg"
+                 alt="Jo gaudint de la platja"
+                 width="500">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Activitat 5 - JavaScript</p>
+        <p>🐾 El món de l'Aloy 🐾</p>
+    </footer>
+
+</body>
+</html>
+
