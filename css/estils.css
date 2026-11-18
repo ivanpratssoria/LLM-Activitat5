@@ -82,7 +82,7 @@ main img {
     border-radius: 12px;
 }
 
-/* GALERIA */
+
 
 .galeria {
     display: grid;
@@ -124,8 +124,6 @@ main img {
     border-radius: 12px;
 }
 
-/* CURIOSITATS */
-
 #zonaInteractiva {
     padding: 25px;
     background-color: #ffe1ed;
@@ -138,7 +136,6 @@ main img {
     display: none;
 }
 
-/* RELLOTGE */
 
 #rellotge {
     text-align: center;
@@ -147,7 +144,6 @@ main img {
     margin: 15px;
 }
 
-/* FORMULARI */
 
 form {
     max-width: 400px;
@@ -181,8 +177,6 @@ button:hover {
     background-color: #87375d;
 }
 
-/* PEU DE PÀGINA */
-
 footer {
     background-color: #a94e78;
     color: white;
@@ -195,7 +189,6 @@ footer p {
     margin: 5px;
 }
 
-/* MÒBILS */
 
 @media (max-width: 600px) {
     header h1 {
